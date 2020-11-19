@@ -11,9 +11,11 @@ latest snapshot. See the _Versions_ section below for more information.
 
 To simply use the latest stable version, run
 
-    docker run -d -p 25565:25565 --name mc -e EULA=TRUE itzg/minecraft-server
+    docker run -d -p 25565:25565 --name mc -e EULA=TRUE anssible/minecraft
 
 where the standard server port, 25565, will be exposed on your host machine.
+
+    docker run -d -p 25575:25565 --name mc -e EULA=TRUE anssible/minecraft
 
 If you want to serve up multiple Minecraft servers or just use an alternate port,
 change the host-side port mapping such as
